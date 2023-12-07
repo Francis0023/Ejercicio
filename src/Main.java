@@ -11,12 +11,23 @@ public class Main {
         Hexagono hexagono_uno;
         Heptagono heptagono_uno;
 
-        circulo_uno=new Circulo(6);
-        triangulo_uno=new Triangulo(9,6,7);
-        cuadrado_uno=new Cuadrilatero(9,7,10,12);
-        pentagono_uno=new Pentagono(9,7,10,12,8);
-        hexagono_uno=new Hexagono(5,7,2,10,7,8);
-        heptagono_uno=new Heptagono(7,8,2,10,7,8,14);
+        System.out.println("Ingresa el radio del Circulo: ");
+        circulo_uno=new Circulo(entrada.nextFloat());
+
+        System.out.println("Ingrese los lados del Triángulo: ");
+        triangulo_uno = new Triangulo(entrada.nextFloat(), entrada.nextFloat(), entrada.nextFloat());
+
+        System.out.println("Ingrese los lados del Cuadrilatero: ");
+        cuadrado_uno = new Cuadrilatero(entrada.nextFloat(), entrada.nextFloat(), entrada.nextFloat(),entrada.nextFloat());
+
+        System.out.println("Ingrese los lados del Pentágono: ");
+        pentagono_uno = new Pentagono(entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat());
+
+        System.out.println("Ingrese los lados de un Hexágono: ");
+        hexagono_uno = new Hexagono(entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat());
+
+        System.out.println("Ingrese los lados de un Heptágono: ");
+        heptagono_uno=new Heptagono(entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat(),entrada.nextFloat());
 
 
         System.out.println("\t\tFiguras en 2D");
